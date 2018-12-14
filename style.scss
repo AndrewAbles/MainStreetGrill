@@ -1,0 +1,203 @@
+body {
+  background-color: #121212;
+  color: #FF8200;
+  font-family: "Arial", sans-serif;
+  margin: auto
+}
+
+.logo {
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 38px;
+}
+
+.image {
+  height: 190px;
+  width: 100%;
+  margin-bottom: -3px;
+  margin-top: -60px
+}
+
+.logo-image {
+  margin-top: -6px ;
+  height: 33px;
+  width: 55px;
+}
+
+.top {
+  width: 103.5%;
+  margin: auto;
+}
+
+.top-bar a{
+  float: left;
+  width: 14.2059%;
+  background: #353535;
+  color: #FF8200;
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-right: 1px;
+}
+
+.top-bar {
+	position: absolute;
+	width: 100%
+	}
+
+#bar:hover:not(.active) {
+    background-color: #121212;
+    transition: 0.1s
+}
+
+// Top bar CSS ends here
+
+
+$heroHeight: 70vh;
+
+.scrollEffects {
+    height: $heroHeight;
+    position: relative;
+    z-index: -1;
+    top: 0px;
+    left: 0;
+    .bg {
+        height: $heroHeight;
+        position: fixed;
+        width: 100%;
+        margin-top: 40px;
+        background-image: url('https://www.publicdomainpictures.net/pictures/210000/velka/black-bricks-background.jpg');
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        transform: scale(1);
+    }
+    .shade {
+        opacity: 0;
+        background: rgba(0, 0, 0, .8);
+        z-index: 3;
+        height: $heroHeight;
+        position: fixed;
+        width: 100%;
+    }
+    .title {
+        width: 100%;
+        .text {
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            color: White;
+            padding: 4em;
+            background: rgba(0, 0, 0, .6);
+        }
+        }
+   .arrow {
+        position: fixed;
+        left: 50%;
+        margin-left: -20px;
+        bottom: 0;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+    }
+}
+
+.centerV {
+    display: table;
+    height: 100%;
+    > div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: 0.1em;
+    font: 5em/1em;
+    color: #fff;
+}
+
+p {
+    width: 60vw;
+    margin: 0 auto;
+    line-height: 1.5em;
+    padding: 10px 20px 0;
+    border-top: solid 1px rgba(255, 255, 255, .2);
+    letter-spacing: 0.015em;
+    display: block;
+    color: #eee;
+}
+
+.content {
+    background: #cdcdcd;
+    padding: 150px 50px;
+    p {
+        color: #111;
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+}
+
+.bouncy {
+    animation: Weeeeeeeeeee 3s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes Weeeeeeeeeee {
+    0% {
+        transform: translate(0, 0px);
+        animation-timing-function: cubic-bezier(.19, .28, .27, 1);
+    }
+    11% {
+        transform: translate(0, -25px) scaleX(.8);
+        animation-timing-function: cubic-bezier(.57, .01, .84, .5);
+    }
+    20% {
+        transform: translate(0, 0px) scaleY(.8);
+        animation-timing-function: cubic-bezier(.19, .28, .27, 1);
+    }
+    28% {
+        transform: translate(0, -10px);
+        animation-timing-function: cubic-bezier(.57, .01, .84, .5);
+    }
+    36% {
+        transform: translate(0, 0px);
+        animation-timing-function: cubic-bezier(.19, .28, .27, 1);
+    }
+    100% {
+        transform: translate(0, 0px);
+        animation-timing-function: cubic-bezier(.19, .28, .27, 1);
+    }
+}
+
+// Scroll effect ends, below is just layout
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+    font-family: Times New Roman, sans-serif;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
